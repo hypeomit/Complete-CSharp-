@@ -37,7 +37,7 @@ namespace ContravarianceExample
 
             // Contravariance = supply the parent type name, where the child type name is expected.
             IMover<Parrot> obj1 = new Mover<Parrot>(); //normal
-            IMover<Parrot> obj2 = new Mover<LivingThing>();
+            IMover<Parrot> obj2 = new Mover<LivingThing>();//because of ln:16 'in' we are able to do like this and this is contravariance
             //"Parrot" vs "LivingThing"; supplying the parent type (LivingThing), where the child type (Parrot) is expected.
             obj2.Move(parrot);
 
@@ -48,3 +48,9 @@ namespace ContravarianceExample
         }
     }
 }
+
+/*
+Output: 
+Moving with 2 legs
+Moving with 4 legs
+*/
