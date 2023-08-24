@@ -1,4 +1,9 @@
-﻿using System;
+﻿//difference between directory(static class) and directoryinfo(instance class: have to create object) is same as file and fileinfo 
+//If you want to perform the single operation on the particular folder like delete: Directory Static class is better
+// In a large program if you want to perform the multiple operation on the same directory, so you dont want to mention the directory path everytime when you call the method in that case : Directory info class is better
+
+//Same Task as in Directory 
+using System;
 using System.Collections.Generic;
 using System.IO;
 

@@ -8,8 +8,8 @@ namespace FileInfoPropertiesExample
         static void Main()
         {
             string filePath = @"c:\practicee\japan.txt";
-            FileInfo fileInfo = new FileInfo(filePath);
-            Console.WriteLine("Exists: " + fileInfo.Exists);
+            FileInfo fileInfo = new FileInfo(filePath);//specify file path as an argument 
+            Console.WriteLine("Exists: " + fileInfo.Exists);// True / False
             if (fileInfo.Exists)
             {
                 Console.WriteLine("FullName: " + fileInfo.FullName);

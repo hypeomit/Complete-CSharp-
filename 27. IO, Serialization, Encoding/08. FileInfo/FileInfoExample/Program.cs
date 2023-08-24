@@ -1,4 +1,6 @@
-﻿using System;
+﻿//Difference File and FileInfo: File class is a Static class but fileInfo method is non Static, we required to create object for the same with 'new'.
+
+using System;
 using System.IO;
 
 namespace FileInfoExample
